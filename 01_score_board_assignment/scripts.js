@@ -107,27 +107,27 @@ function render() {
 
   state.match.forEach((match) => {
     const matchElement = document.createElement("div");
-    matchElement.classList.add("match");
+    matchElement.classNameList.add("match");
 
     matchElement.innerHTML = `
-    <div class="wrapper">
-      <button class="lws-delete ${match.id}" data-id="${match.id}" >
+    <div className="wrapper">
+      <button className="lws-delete ${match.id}" data-id="${match.id}" >
         <img src="./image/delete.svg" alt="" />
       </button>
-      <h3 class="lws-matchName${match.id}">Match ${match.id}</h3>
+      <h3 className="lws-matchName${match.id}">Match ${match.id}</h3>
     </div>
-    <div class="inc-dec">
-      <form class=" matchForm incrementForm">
+    <div className="inc-dec">
+      <form className=" matchForm incrementForm">
         <h4>Increment</h4>
-        <input type="number" name="increment" class="lws-increment ${match.id}" />
+        <input type="number" name="increment" className="lws-increment ${match.id}" />
       </form>
-      <form class="matchForm decrementForm">
+      <form className="matchForm decrementForm">
         <h4>Decrement</h4>
-        <input type="number" name="decrement" class="lws-decrement ${match.id}" />
+        <input type="number" name="decrement" className="lws-decrement ${match.id}" />
       </form>
     </div>
-    <div class="numbers">
-      <h2 class="lws-singleResult">${match.score}</h2>
+    <div className="numbers">
+      <h2 className="lws-singleResult">${match.score}</h2>
     </div>
   `;
 
@@ -142,7 +142,7 @@ store.subscribe(render);
 document.addEventListener("click", function (e) {
   const target = e.target.closest(".lws-delete"); // Or any other selector.
   if (target) {
-    store.dispatch(DeleteMatch(Number(target.classList[1])));
+    store.dispatch(DeleteMatch(Number(target.classNameList[1])));
   }
 });
 
@@ -156,7 +156,7 @@ document.addEventListener("submit", function (e) {
       Increment(
         // Receive score and id
         Number(target.children[1].value),
-        Number(target.children[1].classList[1])
+        Number(target.children[1].classNameList[1])
       )
     );
   }
@@ -165,7 +165,7 @@ document.addEventListener("submit", function (e) {
       Decrement(
         // Receive score and id
         Number(target.children[1].value),
-        Number(target.children[1].classList[1])
+        Number(target.children[1].classNameList[1])
       )
     );
   }

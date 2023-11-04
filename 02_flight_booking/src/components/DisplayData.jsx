@@ -9,47 +9,50 @@ function DisplayData() {
 
   return (
     // Preview Data
-    <div className="table-container">
-      <table className="booking-table">
-        <thead className="bg-gray-100/50">
-          <tr className="text-black text-left">
+    <div classNameName="table-container">
+      <table classNameName="booking-table">
+        <thead classNameName="bg-gray-100/50">
+          <tr classNameName="text-black text-left">
             <th>Destination From</th>
             <th>Destination To</th>
-            <th className="text-center">Journey Date</th>
-            <th className="text-center">Guests</th>
-            <th className="text-center">Class</th>
-            <th className="text-center">Delete</th>
+            <th classNameName="text-center">Journey Date</th>
+            <th classNameName="text-center">Guests</th>
+            <th classNameName="text-center">className</th>
+            <th classNameName="text-center">Delete</th>
           </tr>
         </thead>
         {flightData.length !== 0 &&
           flightData.map((data) => (
             <tbody
-              className="divide-y divide-gray-300/20"
+              classNameName="divide-y divide-gray-300/20"
               id="lws-previewBooked"
               key={data.id}
             >
-              <tr className="lws-bookedTable text-black">
-                <td className="px-6 py-4">
-                  <div className="flex items-center space-x-3">
-                    <p className="lws-bookedFrom">{data.from}</p>
+              <tr classNameName="lws-bookedTable text-black">
+                <td classNameName="px-6 py-4">
+                  <div classNameName="flex items-center space-x-3">
+                    <p classNameName="lws-bookedFrom">{data.from}</p>
                   </div>
                 </td>
-                <td className="px-6 py-4">
-                  <p className="lws-bookedTo">{data.to}</p>
+                <td classNameName="px-6 py-4">
+                  <p classNameName="lws-bookedTo">{data.to}</p>
                 </td>
-                <td className="px-6 py-4 text-center">
-                  <p className="lws-bookedDate">{data.date}</p>
+                <td classNameName="px-6 py-4 text-center">
+                  <p classNameName="lws-bookedDate">{data.date}</p>
                 </td>
-                <td className="px-6 py-4 text-center">
-                  <p className="lws-bookedGustes">{data.guests}</p>
+                <td classNameName="px-6 py-4 text-center">
+                  <p classNameName="lws-bookedGustes">{data.guests}</p>
                 </td>
-                <td className="px-6 py-4 text-center">
-                  <span className="lws-bookedClass"> {data.ticketClass}</span>
+                <td classNameName="px-6 py-4 text-center">
+                  <span classNameName="lws-bookedclassName">
+                    {" "}
+                    {data.ticketclassName}
+                  </span>
                 </td>
-                <td className="px-6 py-4 text-center">
-                  <div className="flex justify-center gap-4">
+                <td classNameName="px-6 py-4 text-center">
+                  <div classNameName="flex justify-center gap-4">
                     <button
-                      className="lws-remove"
+                      classNameName="lws-remove"
                       onClick={() => dispatch(delete_flight_info(data.id))}
                     >
                       <svg
@@ -58,7 +61,7 @@ function DisplayData() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="w-6 h-6"
+                        classNameName="w-6 h-6"
                       >
                         <path
                           strokeLinecap="round"

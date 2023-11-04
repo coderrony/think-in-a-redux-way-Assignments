@@ -4,13 +4,13 @@ import logo from "../assets/img/lws-logo.svg"; // Import the image
 function Navbar() {
   return (
     <header id="header">
-      <div className="container">
-        <img src={logo} alt="logo" className="logo" />
-        <div className="flex items-center">
-          <a className="text-white min-w-[50px] font-medium" href="#">
+      <div classNameName="container">
+        <img src={logo} alt="logo" classNameName="logo" />
+        <div classNameName="flex items-center">
+          <a classNameName="text-white min-w-[50px] font-medium" href="#">
             Home
           </a>
-          <button className="log-btn btn">Login</button>
+          <button classNameName="log-btn btn">Login</button>
         </div>
       </div>
     </header>

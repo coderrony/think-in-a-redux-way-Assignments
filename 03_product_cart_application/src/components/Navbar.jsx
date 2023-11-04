@@ -14,19 +14,24 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-[#171C2A] py-4">
-      <div className="navBar">
+    <nav classNameName="bg-[#171C2A] py-4">
+      <div classNameName="navBar">
         <a href="index.html">
-          <img src={logo} alt="LWS" className="max-w-[140px]" />
+          <img src={logo} alt="LWS" classNameName="max-w-[140px]" />
         </a>
 
-        <div className="flex gap-4">
-          <a href="#home" className="navHome" id="lws-home">
+        <div classNameName="flex gap-4">
+          <a href="#home" classNameName="navHome" id="lws-home">
             {" "}
             Home{" "}
           </a>
-          <a href="#" className="navCart" id="lws-cart" onClick={toggleHandle}>
-            <i className="text-xl fa-sharp fa-solid fa-bag-shopping"></i>
+          <a
+            href="#"
+            classNameName="navCart"
+            id="lws-cart"
+            onClick={toggleHandle}
+          >
+            <i classNameName="text-xl fa-sharp fa-solid fa-bag-shopping"></i>
             <span id="lws-totalCart">{totalCartItems}</span>
           </a>
         </div>
