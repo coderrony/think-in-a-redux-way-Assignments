@@ -35,6 +35,15 @@
       "rating": "4",
       "featured": true,
       "id": 5
+    },
+    {
+      "name": "b",
+      "author": "Marijn Haverbeke",
+      "thumbnail": "https://picsum.photos/500/300?random=3",
+      "price": "5",
+      "rating": "2",
+      "featured": false,
+      "id": 6
     }
   ]
 }
