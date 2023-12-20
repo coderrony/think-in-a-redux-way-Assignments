@@ -23,23 +23,23 @@ function Book({ setEditBook }) {
   return (
     <>
       {books.map((book) => (
-        <div className="book-card" key={book.thumbnail}>
+        <div classNameName="book-card" key={book.thumbnail}>
           <img
-            className="h-[240px] w-[170px] object-cover lws-bookThumbnail"
+            classNameName="h-[240px] w-[170px] object-cover lws-bookThumbnail"
             src={book.thumbnail}
             alt="book"
           />
-          <div className="flex-1 h-full pr-2 pt-2 flex flex-col">
-            <div className="flex items-center justify-between">
+          <div classNameName="flex-1 h-full pr-2 pt-2 flex flex-col">
+            <div classNameName="flex items-center justify-between">
               {book.featured ? (
-                <span className="badge-success lws-Badge">featured</span>
+                <span classNameName="badge-success lws-Badge">featured</span>
               ) : (
-                <span className=" lws-Badge"></span>
+                <span classNameName=" lws-Badge"></span>
               )}
 
-              <div className="text-gray-500 space-x-2">
+              <div classNameName="text-gray-500 space-x-2">
                 <button
-                  className="lws-edit"
+                  classNameName="lws-edit"
                   onClick={() => {
                     if (book.id === editToggle) {
                       setEditBook({});
@@ -55,7 +55,7 @@ function Book({ setEditBook }) {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    classNameName="w-6 h-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -65,7 +65,7 @@ function Book({ setEditBook }) {
                   </svg>
                 </button>
                 <button
-                  className="lws-delete"
+                  classNameName="lws-delete"
                   onClick={() => dispatch(delete_book(book.id))}
                 >
                   <svg
@@ -73,7 +73,7 @@ function Book({ setEditBook }) {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    classNameName="w-6 h-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -85,16 +85,16 @@ function Book({ setEditBook }) {
               </div>
             </div>
 
-            <div className="space-y-2 mt-4 h-full">
-              <h4 className="lws-bookName">{book.name}</h4>
-              <p className="lws-author">{book.author}</p>
-              <div className="lws-stars">
+            <div classNameName="space-y-2 mt-4 h-full">
+              <h4 classNameName="lws-bookName">{book.name}</h4>
+              <p classNameName="lws-author">{book.author}</p>
+              <div classNameName="lws-stars">
                 {Array.from({ length: book.rating }, (v, i) => (
                   <svg
                     key={i}
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="lws-star"
+                    classNameName="lws-star"
                   >
                     <path
                       fillRule="evenodd"
@@ -104,7 +104,7 @@ function Book({ setEditBook }) {
                   </svg>
                 ))}
               </div>
-              <p className="lws-price">BDT {book.price}</p>
+              <p classNameName="lws-price">BDT {book.price}</p>
             </div>
           </div>
         </div>

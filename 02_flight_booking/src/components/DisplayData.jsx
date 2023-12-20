@@ -9,50 +9,50 @@ function DisplayData() {
 
   return (
     // Preview Data
-    <div classNameName="table-container">
-      <table classNameName="booking-table">
-        <thead classNameName="bg-gray-100/50">
-          <tr classNameName="text-black text-left">
+    <div classNameNameName="table-container">
+      <table classNameNameName="booking-table">
+        <thead classNameNameName="bg-gray-100/50">
+          <tr classNameNameName="text-black text-left">
             <th>Destination From</th>
             <th>Destination To</th>
-            <th classNameName="text-center">Journey Date</th>
-            <th classNameName="text-center">Guests</th>
-            <th classNameName="text-center">className</th>
-            <th classNameName="text-center">Delete</th>
+            <th classNameNameName="text-center">Journey Date</th>
+            <th classNameNameName="text-center">Guests</th>
+            <th classNameNameName="text-center">classNameName</th>
+            <th classNameNameName="text-center">Delete</th>
           </tr>
         </thead>
         {flightData.length !== 0 &&
           flightData.map((data) => (
             <tbody
-              classNameName="divide-y divide-gray-300/20"
+              classNameNameName="divide-y divide-gray-300/20"
               id="lws-previewBooked"
               key={data.id}
             >
-              <tr classNameName="lws-bookedTable text-black">
-                <td classNameName="px-6 py-4">
-                  <div classNameName="flex items-center space-x-3">
-                    <p classNameName="lws-bookedFrom">{data.from}</p>
+              <tr classNameNameName="lws-bookedTable text-black">
+                <td classNameNameName="px-6 py-4">
+                  <div classNameNameName="flex items-center space-x-3">
+                    <p classNameNameName="lws-bookedFrom">{data.from}</p>
                   </div>
                 </td>
-                <td classNameName="px-6 py-4">
-                  <p classNameName="lws-bookedTo">{data.to}</p>
+                <td classNameNameName="px-6 py-4">
+                  <p classNameNameName="lws-bookedTo">{data.to}</p>
                 </td>
-                <td classNameName="px-6 py-4 text-center">
-                  <p classNameName="lws-bookedDate">{data.date}</p>
+                <td classNameNameName="px-6 py-4 text-center">
+                  <p classNameNameName="lws-bookedDate">{data.date}</p>
                 </td>
-                <td classNameName="px-6 py-4 text-center">
-                  <p classNameName="lws-bookedGustes">{data.guests}</p>
+                <td classNameNameName="px-6 py-4 text-center">
+                  <p classNameNameName="lws-bookedGustes">{data.guests}</p>
                 </td>
-                <td classNameName="px-6 py-4 text-center">
-                  <span classNameName="lws-bookedclassName">
+                <td classNameNameName="px-6 py-4 text-center">
+                  <span classNameNameName="lws-bookedclassNameName">
                     {" "}
-                    {data.ticketclassName}
+                    {data.ticketclassNameName}
                   </span>
                 </td>
-                <td classNameName="px-6 py-4 text-center">
-                  <div classNameName="flex justify-center gap-4">
+                <td classNameNameName="px-6 py-4 text-center">
+                  <div classNameNameName="flex justify-center gap-4">
                     <button
-                      classNameName="lws-remove"
+                      classNameNameName="lws-remove"
                       onClick={() => dispatch(delete_flight_info(data.id))}
                     >
                       <svg
@@ -61,7 +61,7 @@ function DisplayData() {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        classNameName="w-6 h-6"
+                        classNameNameName="w-6 h-6"
                       >
                         <path
                           strokeLinecap="round"

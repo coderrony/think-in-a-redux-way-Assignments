@@ -59,37 +59,43 @@ function Carts() {
   };
 
   return (
-    <main classNameName="py-16">
-      <div classNameName="container 2xl:px-8 px-2 mx-auto">
-        <h2 classNameName="mb-8 text-xl font-bold">Shopping Cart</h2>
-        <div classNameName="cartListContainer">
-          <div classNameName="space-y-6">
+    <main classNameNameName="py-16">
+      <div classNameNameName="container 2xl:px-8 px-2 mx-auto">
+        <h2 classNameNameName="mb-8 text-xl font-bold">Shopping Cart</h2>
+        <div classNameNameName="cartListContainer">
+          <div classNameNameName="space-y-6">
             {/* Cart Item */}
             {carts.length !== 0 ? (
               carts.map((cart) => (
-                <div classNameName="cartCard" key={cart.id}>
-                  <div classNameName="flex items-center col-span-6 space-x-6">
+                <div classNameNameName="cartCard" key={cart.id}>
+                  <div classNameNameName="flex items-center col-span-6 space-x-6">
                     {/* cart image */}
                     <img
-                      classNameName="lws-cartImage"
+                      classNameNameName="lws-cartImage"
                       src={cart.image_url}
                       alt="product"
                     />
                     {/* cart item info */}
-                    <div classNameName="space-y-2">
-                      <h4 classNameName="lws-cartName">{cart.product_name}</h4>
-                      <p classNameName="lws-cartCategory">{cart.category}</p>
+                    <div classNameNameName="space-y-2">
+                      <h4 classNameNameName="lws-cartName">
+                        {cart.product_name}
+                      </h4>
+                      <p classNameNameName="lws-cartCategory">
+                        {cart.category}
+                      </p>
                       <p>
                         BDT{" "}
-                        <span classNameName="lws-cartPrice">{cart.price}</span>
+                        <span classNameNameName="lws-cartPrice">
+                          {cart.price}
+                        </span>
                       </p>
                     </div>
                   </div>
-                  <div classNameName="flex items-center justify-center col-span-4 mt-4 space-x-8 md:mt-0">
+                  <div classNameNameName="flex items-center justify-center col-span-4 mt-4 space-x-8 md:mt-0">
                     {/* amount buttons */}
-                    <div classNameName="flex items-center space-x-4">
+                    <div classNameNameName="flex items-center space-x-4">
                       <button
-                        classNameName="lws-incrementQuantity"
+                        classNameNameName="lws-incrementQuantity"
                         onClick={() => incrementHandle(cart)}
                         style={
                           checkProductQuantity(products, cart.id)
@@ -98,36 +104,36 @@ function Carts() {
                         }
                       >
                         {checkProductQuantity(products, cart.id) ? (
-                          <i classNameName="fa-solid fa-lock"></i>
+                          <i classNameNameName="fa-solid fa-lock"></i>
                         ) : (
-                          <i classNameName="text-lg fa-solid fa-plus"></i>
+                          <i classNameNameName="text-lg fa-solid fa-plus"></i>
                         )}
                       </button>
-                      <span classNameName="lws-cartQuantity">
+                      <span classNameNameName="lws-cartQuantity">
                         {cart.quantity}
                       </span>
                       <button
-                        classNameName="lws-decrementQuantity"
+                        classNameNameName="lws-decrementQuantity"
                         onClick={() => decrementHandle(cart)}
                       >
-                        <i classNameName="text-lg fa-solid fa-minus"></i>
+                        <i classNameNameName="text-lg fa-solid fa-minus"></i>
                       </button>
                     </div>
                     {/* price */}
-                    <p classNameName="text-lg font-bold">
+                    <p classNameNameName="text-lg font-bold">
                       BDT{" "}
-                      <span classNameName="lws-calculatedPrice">
+                      <span classNameNameName="lws-calculatedPrice">
                         {cart.price * cart.quantity}
                       </span>
                     </p>
                   </div>
                   {/* delete button */}
-                  <div classNameName="flex items-center justify-center col-span-2 mt-4 md:justify-end md:mt-0">
+                  <div classNameNameName="flex items-center justify-center col-span-2 mt-4 md:justify-end md:mt-0">
                     <button
-                      classNameName="lws-removeFromCart"
+                      classNameNameName="lws-removeFromCart"
                       onClick={() => deleteHandle(cart)}
                     >
-                      <i classNameName="text-lg text-red-400 fa-solid fa-trash"></i>
+                      <i classNameNameName="text-lg text-red-400 fa-solid fa-trash"></i>
                     </button>
                   </div>
                 </div>
@@ -141,40 +147,41 @@ function Carts() {
 
           {/* Bill Details */}
           <div>
-            <div classNameName="billDetailsCard">
-              <h4 classNameName="mt-2 mb-8 text-xl font-bold text-center">
+            <div classNameNameName="billDetailsCard">
+              <h4 classNameNameName="mt-2 mb-8 text-xl font-bold text-center">
                 Bill Details
               </h4>
-              <div classNameName="space-y-4">
+              <div classNameNameName="space-y-4">
                 {/* sub total */}
-                <div classNameName="flex items-center justify-between">
+                <div classNameNameName="flex items-center justify-between">
                   <p>Sub Total</p>
                   <p>
-                    BDT <span classNameName="lws-subtotal">{totalAmount}</span>
+                    BDT{" "}
+                    <span classNameNameName="lws-subtotal">{totalAmount}</span>
                   </p>
                 </div>
                 {/* Discount */}
-                <div classNameName="flex items-center justify-between">
+                <div classNameNameName="flex items-center justify-between">
                   <p>Discount</p>
                   <p>
-                    BDT <span classNameName="lws-discount">0</span>
+                    BDT <span classNameNameName="lws-discount">0</span>
                   </p>
                 </div>
                 {/* VAT */}
-                <div classNameName="flex items-center justify-between">
+                <div classNameNameName="flex items-center justify-between">
                   <p>VAT</p>
                   <p>
-                    BDT <span classNameName="vat">0</span>
+                    BDT <span classNameNameName="vat">0</span>
                   </p>
                 </div>
                 {/* Total */}
-                <div classNameName="flex items-center justify-between pb-4">
-                  <p classNameName="font-bold">TOTAL</p>
-                  <p classNameName="font-bold">
-                    BDT <span classNameName="lws-total">{totalAmount}</span>
+                <div classNameNameName="flex items-center justify-between pb-4">
+                  <p classNameNameName="font-bold">TOTAL</p>
+                  <p classNameNameName="font-bold">
+                    BDT <span classNameNameName="lws-total">{totalAmount}</span>
                   </p>
                 </div>
-                <button classNameName="placeOrderbtn">place order</button>
+                <button classNameNameName="placeOrderbtn">place order</button>
               </div>
             </div>
           </div>

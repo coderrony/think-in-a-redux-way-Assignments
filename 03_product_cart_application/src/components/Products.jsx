@@ -33,36 +33,39 @@ function Products() {
     }
   };
   return (
-    <main classNameName="py-16">
-      <div classNameName="productWrapper">
-        <div classNameName="productContainer" id="lws-productContainer">
+    <main classNameNameName="py-16">
+      <div classNameNameName="productWrapper">
+        <div classNameNameName="productContainer" id="lws-productContainer">
           {/* product item  */}
           {products.length !== 0 ? (
             products.map((product) => (
-              <div classNameName="lws-productCard" key={product.id}>
+              <div classNameNameName="lws-productCard" key={product.id}>
                 <img
-                  classNameName="lws-productImage"
+                  classNameNameName="lws-productImage"
                   src={product.image_url}
                   alt={product.product_name}
                 />
-                <div classNameName="p-4 space-y-2">
-                  <h4 classNameName="lws-productName">
+                <div classNameNameName="p-4 space-y-2">
+                  <h4 classNameNameName="lws-productName">
                     {product.product_name}
                   </h4>
-                  <p classNameName="lws-productCategory">{product.category}</p>
-                  <div classNameName="flex items-center justify-between pb-2">
-                    <p classNameName="productPrice">
-                      BDT <span classNameName="lws-price">{product.price}</span>
+                  <p classNameNameName="lws-productCategory">
+                    {product.category}
+                  </p>
+                  <div classNameNameName="flex items-center justify-between pb-2">
+                    <p classNameNameName="productPrice">
+                      BDT{" "}
+                      <span classNameNameName="lws-price">{product.price}</span>
                     </p>
-                    <p classNameName="productQuantity">
+                    <p classNameNameName="productQuantity">
                       QTY{" "}
-                      <span classNameName="lws-quantity">
+                      <span classNameNameName="lws-quantity">
                         {product.quantity}
                       </span>
                     </p>
                   </div>
                   <button
-                    classNameName="lws-btnAddToCart"
+                    classNameNameName="lws-btnAddToCart"
                     onClick={() => addToCartHandle(product)}
                     disabled={product.quantity === 0 ? true : false}
                   >
@@ -79,18 +82,18 @@ function Products() {
         </div>
 
         <div>
-          <div classNameName="formContainer">
-            <h4 classNameName="formTitle">Add New Product</h4>
+          <div classNameNameName="formContainer">
+            <h4 classNameNameName="formTitle">Add New Product</h4>
             <form
-              classNameName="space-y-4 text-[#534F4F]"
+              classNameNameName="space-y-4 text-[#534F4F]"
               id="lws-addProductForm"
               onSubmit={handleSubmit}
             >
               {/* product name  */}
-              <div classNameName="space-y-2">
+              <div classNameNameName="space-y-2">
                 <label htmlFor="lws-inputName">Product Name</label>
                 <input
-                  classNameName="addProductInput"
+                  classNameNameName="addProductInput"
                   id="lws-inputName"
                   name="lws-inputName"
                   type="text"
@@ -98,10 +101,10 @@ function Products() {
                 />
               </div>
               {/* product category */}
-              <div classNameName="space-y-2">
+              <div classNameNameName="space-y-2">
                 <label htmlFor="lws-inputCategory">Category</label>
                 <input
-                  classNameName="addProductInput"
+                  classNameNameName="addProductInput"
                   id="lws-inputCategory"
                   name="lws-inputCategory"
                   type="text"
@@ -109,10 +112,10 @@ function Products() {
                 />
               </div>
               {/* product image url */}
-              <div classNameName="space-y-2">
+              <div classNameNameName="space-y-2">
                 <label htmlFor="lws-inputImage">Image Url</label>
                 <input
-                  classNameName="addProductInput"
+                  classNameNameName="addProductInput"
                   id="lws-inputImage"
                   name="lws-inputImage"
                   type="text"
@@ -120,12 +123,12 @@ function Products() {
                 />
               </div>
               {/* price & quantity container */}
-              <div classNameName="grid grid-cols-2 gap-8 pb-4">
+              <div classNameNameName="grid grid-cols-2 gap-8 pb-4">
                 {/* Price */}
-                <div classNameName="space-y-2">
+                <div classNameNameName="space-y-2">
                   <label htmlFor="ws-inputPrice">Price</label>
                   <input
-                    classNameName="addProductInput"
+                    classNameNameName="addProductInput"
                     type="number"
                     id="lws-inputPrice"
                     name="lws-inputPrice"
@@ -133,10 +136,10 @@ function Products() {
                   />
                 </div>
                 {/* quantity */}
-                <div classNameName="space-y-2">
+                <div classNameNameName="space-y-2">
                   <label htmlFor="lws-inputQuantity">Quantity</label>
                   <input
-                    classNameName="addProductInput"
+                    classNameNameName="addProductInput"
                     type="number"
                     id="lws-inputQuantity"
                     name="lws-inputQuantity"
@@ -145,7 +148,11 @@ function Products() {
                 </div>
               </div>
               {/* submit button  */}
-              <button type="submit" id="lws-inputSubmit" classNameName="submit">
+              <button
+                type="submit"
+                id="lws-inputSubmit"
+                classNameNameName="submit"
+              >
                 Add Product
               </button>
             </form>

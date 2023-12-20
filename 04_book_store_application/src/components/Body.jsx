@@ -53,16 +53,16 @@ function Body() {
   };
 
   return (
-    <main className="py-12 2xl:px-6">
-      <div className="container grid xl:grid-cols-[auto_350px] 2xl:grid-cols-[auto_400px] gap-4 2xl:gap-8">
-        <div className="order-2 xl:-order-1">
-          <div className="flex items-center justify-between mb-12">
-            <h4 className="mt-2 text-xl font-bold">Book List</h4>
+    <main classNameName="py-12 2xl:px-6">
+      <div classNameName="container grid xl:grid-cols-[auto_350px] 2xl:grid-cols-[auto_400px] gap-4 2xl:gap-8">
+        <div classNameName="order-2 xl:-order-1">
+          <div classNameName="flex items-center justify-between mb-12">
+            <h4 classNameName="mt-2 text-xl font-bold">Book List</h4>
 
-            <div className="flex items-center space-x-4">
+            <div classNameName="flex items-center space-x-4">
               <button
-                // className="filter-btn active-filter"
-                className={`filter-btn ${
+                // classNameName="filter-btn active-filter"
+                classNameName={`filter-btn ${
                   filterBook.status === "ALL" && "active-filter"
                 }`}
                 id="lws-filterAll"
@@ -71,7 +71,7 @@ function Body() {
                 All
               </button>
               <button
-                className={`filter-btn ${
+                classNameName={`filter-btn ${
                   filterBook.status === "FEATURED" && "active-filter"
                 }`}
                 id="lws-filterFeatured"
@@ -81,71 +81,73 @@ function Body() {
               </button>
             </div>
           </div>
-          <div className="lws-bookContainer">
+          <div classNameName="lws-bookContainer">
             {/* Card 1 */}
             <Book setEditBook={setEditBook} />
           </div>
         </div>
         <div>
-          <div className="p-4 overflow-hidden bg-white shadow-cardShadow rounded-md">
-            <h4 className="mb-8 text-xl font-bold text-center">Add New Book</h4>
+          <div classNameName="p-4 overflow-hidden bg-white shadow-cardShadow rounded-md">
+            <h4 classNameName="mb-8 text-xl font-bold text-center">
+              Add New Book
+            </h4>
 
-            <form className="book-form" onSubmit={handleSubmit}>
-              <div className="space-y-2">
+            <form classNameName="book-form" onSubmit={handleSubmit}>
+              <div classNameName="space-y-2">
                 <label>Book Name</label>
                 <input
                   required
                   defaultValue={editBook?.name}
-                  className="text-input"
+                  classNameName="text-input"
                   type="text"
                   id="input-Bookname"
                   name="name"
                 />
               </div>
 
-              <div className="space-y-2">
+              <div classNameName="space-y-2">
                 <label>Author</label>
                 <input
                   required
                   defaultValue={editBook?.author}
-                  className="text-input"
+                  classNameName="text-input"
                   type="text"
                   id="input-Bookauthor"
                   name="author"
                 />
               </div>
 
-              <div className="space-y-2">
+              <div classNameName="space-y-2">
                 <label>Image Url</label>
                 <input
                   required
                   defaultValue={editBook?.thumbnail}
-                  className="text-input"
+                  classNameName="text-input"
                   type="text"
                   id="input-Bookthumbnail"
                   name="thumbnail"
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-8 pb-4">
-                <div className="space-y-2">
+              <div classNameName="grid grid-cols-2 gap-8 pb-4">
+                <div classNameName="space-y-2">
                   <label>Price</label>
                   <input
                     required
                     defaultValue={editBook?.price}
-                    className="text-input"
+                    classNameName="text-input"
                     type="number"
                     id="input-Bookprice"
                     name="price"
                   />
                 </div>
 
-                <div className="space-y-2">
+                <div classNameName="space-y-2">
                   <label>Rating</label>
                   <input
                     required
                     defaultValue={editBook?.rating}
-                    className="text-input"
+                    classNameName="text-input"
                     type="number"
                     id="input-Bookrating"
                     name="rating"
@@ -155,22 +157,22 @@ function Body() {
                 </div>
               </div>
 
-              <div className="flex items-center">
+              <div classNameName="flex items-center">
                 <input
                   checked={isChecked}
                   onChange={handleCheckboxChange}
                   id="input-Bookfeatured"
                   type="checkbox"
                   name="featured"
-                  className="w-4 h-4"
+                  classNameName="w-4 h-4"
                 />
-                <label className="ml-2 text-sm">
+                <label classNameName="ml-2 text-sm">
                   {" "}
                   This is a featured book{" "}
                 </label>
               </div>
 
-              <button type="submit" className="submit" id="submit">
+              <button type="submit" classNameName="submit" id="submit">
                 {isObjectEmpty(editBook) ? " Update Book" : " Add Book"}
               </button>
             </form>

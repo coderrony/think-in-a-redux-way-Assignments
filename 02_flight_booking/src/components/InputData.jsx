@@ -21,7 +21,7 @@ function InputData() {
       to: data.get("to"),
       date: data.get("date"),
       guests: data.get("guests"),
-      ticketclassName: data.get("ticketclassName"),
+      ticketclassNameName: data.get("ticketclassNameName"),
     };
     dispatch(add_flight_info(currentData));
 
@@ -31,19 +31,19 @@ function InputData() {
   return (
     <section>
       {/* Input Data */}
-      <div classNameName="mt-[160px] mx-4 md:mt-[160px] relative">
-        <div classNameName="bg-white rounded-md max-w-6xl w-full mx-auto">
+      <div classNameNameName="mt-[160px] mx-4 md:mt-[160px] relative">
+        <div classNameNameName="bg-white rounded-md max-w-6xl w-full mx-auto">
           <form
-            classNameName="first-hero lws-inputform"
+            classNameNameName="first-hero lws-inputform"
             onSubmit={handleSubmit}
           >
             {/* From */}
-            <div classNameName="des-from">
+            <div classNameNameName="des-from">
               <p>Destination From</p>
-              <div classNameName="flex flex-row">
+              <div classNameNameName="flex flex-row">
                 <img src={icon} alt="" />
                 <select
-                  classNameName="outline-none px-2 py-2 w-full"
+                  classNameNameName="outline-none px-2 py-2 w-full"
                   name="from"
                   id="lws-from"
                   required
@@ -60,12 +60,12 @@ function InputData() {
             </div>
 
             {/* To */}
-            <div classNameName="des-from">
+            <div classNameNameName="des-from">
               <p>Destination To</p>
-              <div classNameName="flex flex-row">
+              <div classNameNameName="flex flex-row">
                 <img src={icon} alt="" />
                 <select
-                  classNameName="outline-none px-2 py-2 w-full"
+                  classNameNameName="outline-none px-2 py-2 w-full"
                   name="to"
                   id="lws-to"
                   required
@@ -82,11 +82,11 @@ function InputData() {
             </div>
 
             {/* Date */}
-            <div classNameName="des-from">
+            <div classNameNameName="des-from">
               <p>Journey Date</p>
               <input
                 type="date"
-                classNameName="outline-none px-2 py-2 w-full date"
+                classNameNameName="outline-none px-2 py-2 w-full date"
                 name="date"
                 id="lws-date"
                 required
@@ -94,12 +94,12 @@ function InputData() {
             </div>
 
             {/* Guests */}
-            <div classNameName="des-from">
+            <div classNameNameName="des-from">
               <p>Guests</p>
-              <div classNameName="flex flex-row">
+              <div classNameNameName="flex flex-row">
                 <img src={icon2} alt="" />
                 <select
-                  classNameName="outline-none px-2 py-2 w-full"
+                  classNameNameName="outline-none px-2 py-2 w-full"
                   name="guests"
                   id="lws-guests"
                   required
@@ -115,15 +115,15 @@ function InputData() {
               </div>
             </div>
 
-            {/* classNameName */}
-            <div classNameName="des-from !border-r-0">
-              <p>className</p>
-              <div classNameName="flex flex-row">
+            {/* classNameNameName */}
+            <div classNameNameName="des-from !border-r-0">
+              <p>classNameName</p>
+              <div classNameNameName="flex flex-row">
                 <img src={icon3} alt="" />
                 <select
-                  classNameName="outline-none px-2 py-2 w-full"
-                  name="ticketclassName"
-                  id="lws-ticketclassName"
+                  classNameNameName="outline-none px-2 py-2 w-full"
+                  name="ticketclassNameName"
+                  id="lws-ticketclassNameName"
                   required
                 >
                   <option value="" hidden>
@@ -136,7 +136,11 @@ function InputData() {
             </div>
 
             {flightDataLength !== 3 ? (
-              <button classNameName="addCity" type="submit" id="lws-addCity">
+              <button
+                classNameNameName="addCity"
+                type="submit"
+                id="lws-addCity"
+              >
                 <svg
                   style={{
                     width: "15px",
@@ -147,11 +151,11 @@ function InputData() {
                     stroke: "currentColor",
                   }}
                 ></svg>
-                ➕<span classNameName="text-sm">Book</span>
+                ➕<span classNameNameName="text-sm">Book</span>
               </button>
             ) : (
               <button
-                classNameName="addCity"
+                classNameNameName="addCity"
                 type="submit"
                 id="lws-addCity"
                 disabled
@@ -166,7 +170,7 @@ function InputData() {
                     stroke: "currentColor",
                   }}
                 ></svg>
-                ❌<span classNameName="text-sm">Disable</span>
+                ❌<span classNameNameName="text-sm">Disable</span>
               </button>
             )}
           </form>
