@@ -15,3 +15,16 @@
 ✓ Details পেজে, 'Related Blogs' সেকশনে ট্যাগ অনুযায়ী রিলেটেড ব্লগ গুলো দেখাবে।
 
 ✓ যেই ব্লগ পোষ্ট এর ডিটেইল পেজে যাবো, সেই পোষ্ট যেন 'Related Blogs' এর লিস্ট এ না আসে।
+
+## Installation
+
+run project
+
+```bash
+  git clone
+  https://github.com/coderrony/think-in-a-redux-way-Assignments.git
+```
+```bash
+   cd 06_blog_application_with_redux_toolkit
+     npm run dev
+```
