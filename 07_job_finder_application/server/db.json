@@ -1,0 +1,60 @@
+{
+  "jobs": [
+    {
+      "title": "Full Stack Developer",
+      "type": "Remote",
+      "salary": "555555",
+      "deadline": "2024-02-09",
+      "id": 1
+    },
+    {
+      "title": "MERN Stack Developer",
+      "type": "Remote",
+      "salary": "567567",
+      "deadline": "2024-02-26",
+      "id": 7
+    },
+    {
+      "title": "Android App Developer",
+      "type": "Full Time",
+      "salary": "3333333333",
+      "deadline": "2024-02-18",
+      "id": 8
+    },
+    {
+      "title": "Senior Executive",
+      "type": "Full Time",
+      "salary": "5545",
+      "deadline": "2024-02-23",
+      "id": 9
+    },
+    {
+      "title": "DevOps Engineer",
+      "type": "Remote",
+      "salary": "32435",
+      "deadline": "2024-02-17",
+      "id": 10
+    },
+    {
+      "title": "Software Engineer",
+      "type": "Internship",
+      "salary": "1000",
+      "deadline": "2024-02-19",
+      "id": 11
+    },
+    {
+      "title": "Product Manager",
+      "type": "Internship",
+      "salary": "34556",
+      "deadline": "2024-02-29",
+      "id": 12
+    },
+    {
+      "title": "Full Stack Developer",
+      "type": "Internship",
+      "salary": "546",
+      "deadline": "2024-02-27",
+      "id": 13
+    }
+  ]
+}
